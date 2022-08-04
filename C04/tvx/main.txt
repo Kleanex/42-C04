@@ -1,0 +1,61 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    main.txt                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dosteine <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/21 20:00:01 by dosteine          #+#    #+#              #
+#    Updated: 2022/07/21 20:01:02 by dosteine         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+ex00
+
+#include <stdio.h>
+
+int main(void)
+{
+	char	*str;
+	
+	str = "Bonjour";
+	printf("%d", ft_strlen (str));
+}
+
+ex01
+
+int main()
+{
+	char *str;
+
+	str = "Hello";
+	ft_putstr (str);
+	return (0);
+}
+
+ex02
+
+int	main()
+{
+	ft_putnbr(-2022051);
+	return(0);
+}
+
+ex03
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char **argv)
+{
+	int dom;
+	int lib;
+
+	if (argc == 2)
+	{
+		dom = ft_atoi(argv[1]);
+		lib = atoi(argv[1]);
+		printf("dom : %d || lib : %d", dom, lib);
+	}	
+	return(0);
+}
